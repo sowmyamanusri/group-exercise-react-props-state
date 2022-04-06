@@ -39,7 +39,9 @@ function App() {
       <ChuckInfo whalesSaved ={whalesSaved} roundHouseKicks={roundHouseKicks}/>
 
       <h2>Jokes: </h2>
-       
+       {jokes.map((joke) =>{
+       return  <ChuckJokes key={joke.id} id ={joke.id} joke ={joke.joke}/>
+       })}
 
        <h2>Filtered Jokes :</h2>
       
