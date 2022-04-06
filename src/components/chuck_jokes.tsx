@@ -1,10 +1,11 @@
 // An alternative way of declaring a component is to write it as a function which
 // returns a JSX.Element 
-function ChuckJokes() : JSX.Element {
+
+const  ChuckJokes:React.FC<{id:number;joke:string}> =({id,joke}) =>  {
 
     return (
         <>
-            <p></p>
+            <p> Id:{id}  - Joke: {joke}</p>
         </>
     )
 }
